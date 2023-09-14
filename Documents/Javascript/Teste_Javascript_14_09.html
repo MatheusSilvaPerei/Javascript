@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function validarDados(){
+            if(document.getElementById("edtnome") .value == "") {
+                alert ("O campo Nome está vazio! Por favor, preencha-o.");
+            }
+            if(document.getElementById("edtendereco") .value == "") {
+                alert ("O campo Endereço está vazio! Por favor, preencha-o.");
+            }
+            if(document.getElementById("edtbairro") .value == "") {
+                alert ("O campo Bairro está vazio! Por favor, preencha-o.");
+            }
+            if(document.getElementById("edtcep") .value == "") {
+                alert ("O campo CEP está vazio! Por favor, preencha-o.");
+            }
+            if(document.getElementById("cidade") .value == "") {
+                alert ("O campo Cidade está vazio! Por favor, preencha-o.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Nome: <input type="text" name="nome" id="edtnome"><br>
+        Endereço: <input type="text" name="endereco" id="edtendereco"><br>
+        Bairro: <input type="text" name="bairro" id="edtbairro"><br>
+        CEP: <input type="text" name="cep" id="edtcep"><br>
+        Cidade: <input type="text" name="cidade" id="edtcidade"><br>
+        <div class="mb-3">
+            <label for="edtEstado" class="form-label">Estado:</label>
+            <select class="form-select" aria-label="estado">
+                <option value="1">MG</option>
+                <option value="2">RJ</option>
+                <option value="3">AC</option>
+                <option value="3">AM</option>
+                <option value="3">SC</option>
+                <option value="3">MT</option>
+            </select>
+        </div>                 
+
+        <button name="Cadastar" id="cadastrar" onclick="validarDados()">Cadastar</button>
+</body>
+</html>
